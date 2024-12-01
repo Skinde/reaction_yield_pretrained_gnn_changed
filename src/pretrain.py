@@ -7,6 +7,8 @@ from torch.optim import Adam
 from dgl.convert import graph
 from sklearn.preprocessing import StandardScaler
 from sklearn.decomposition import PCA
+from sklearn.manifold import TSNE
+import umap
 
 from src.model import GIN, linear_head
 from src.util import collate_graphs_pretraining
@@ -29,11 +31,12 @@ def pretrain(args):
     edge_dim = pretraining_dataset.edge_attr.shape[1]
     mordred_dim = pretraining_dataset.mordred.shape[1]
 
-    g_encoder = GIN(node_dim, edge_dim).cuda()
-    m_predictor = linear_head(in_feats=1024, out_feats=mordred_dim).cuda()
+    g_encoder = GIN(node_dim, edge_dim)
+    m_predictor = linear_head(in_feats=1024, out_feats=mordred_dim)
 
     pc_eigenvalue = pretraining_dataset.pc_eigenvalue
 
+    #pretrain_moldescpred(g_encoder, m_predictor, train_loader, args.seed)
     pretrain_moldescpred(g_encoder, m_predictor, train_loader, pc_eigenvalue, args.seed)
 
 
@@ -43,10 +46,10 @@ def pretrain_moldescpred(
     trn_loader,
     pc_eigenvalue,
     seed,
-    cuda=torch.device("cuda:0"),
+    cuda=torch.device("cpu"),
 ):
     max_epochs = 10
-
+    loss_data = []
     pretrained_model_path = "./model/pretrained/" + "%d_pretrained_gnn.pt" % (seed)
 
     optimizer = Adam(
@@ -58,7 +61,21 @@ def pretrain_moldescpred(
     pc_eigenvalue = torch.from_numpy(pc_eigenvalue).to(cuda)
 
     def weighted_mse_loss(input, target, weight):
+        print("Weight: ")
+        print(weight.shape)
+        print("Input:")
+        print((input).shape)
+        print("preweight")
+        print(((input - target) ** 2).shape)
+        print("result:")
+        print((weight * ((input - target) ** 2)).shape)
+        print("postmean")
+        print((weight * ((input - target) ** 2)).mean())
         return (weight * ((input - target) ** 2)).mean()
+
+    def standard_mse_loss(input, target):
+        print(((input - target) ** 2).mean().shape)
+        return ((input - target) ** 2).mean()
 
     l_start_time = time.time()
 
@@ -86,6 +103,7 @@ def pretrain_moldescpred(
             m_pred = m_predictor(g_rep)
 
             loss = weighted_mse_loss(m_pred, mordred, pc_eigenvalue)
+            #loss = standard_mse_loss(m_pred, mordred)
 
             optimizer.zero_grad()
             loss.backward()
@@ -104,9 +122,17 @@ def pretrain_moldescpred(
                 (time.time() - start_time) / 60,
             )
         )
+        loss_data.append(printed_train_loss)
+
 
     torch.save(g_encoder.state_dict(), pretrained_model_path)
 
+    f = open("trainloss-data.txt", "a")
+    f.write("\n")
+    for index_of_loss in range(len(loss_data)-1):
+        f.write(str(loss_data[index_of_loss]) + ",")
+    f.write(str(loss_data[-1]))
+    f.close()
     print("pretraining terminated!")
     print("learning time (min):", (time.time() - l_start_time) / 60)
 
@@ -148,10 +174,19 @@ class Pretraining_Dataset:
         mordred = scaler.fit_transform(mordred)
 
         # Applying PCA to reduce the dimensionality of descriptors
+        self.pc_num = 40
         pca = PCA(n_components=self.pc_num)
         mordred = pca.fit_transform(mordred)
         self.pc_eigenvalue = pca.explained_variance_
-        print("eigenvalue:", self.pc_eigenvalue)
+        print(self.pc_eigenvalue)
+        #tsne = TSNE(n_components=self.pc_num)
+        #mordred = tsne.fit_transform(mordred)
+
+        #reducer = umap.UMAP(n_components=40)
+        #mordred = reducer.fit_transform(mordred)
+        
+        
+        #print("eigenvalue:", self.pc_eigenvalue)
 
         # Clipping each dimension to -10*std ~ 10*std
         mordred = np.clip(mordred, -np.std(mordred, 0) * 10, np.std(mordred, 0) * 10)
@@ -159,6 +194,7 @@ class Pretraining_Dataset:
         # Re-standardizing descriptors
         scaler = StandardScaler()
         mordred = scaler.fit_transform(mordred)
+        
 
         print("mordred processed finished!")
 
