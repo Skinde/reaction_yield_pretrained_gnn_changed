@@ -1,0 +1,10 @@
+python3 main_pretrain.py --pca_dim 3 --seed 27407
+python3 main_pretrain.py --pca_dim 3 --seed 26186
+python3 main_pretrain.py --pca_dim 3 --seed 19919
+python3 main_pretrain.py --pca_dim 3 --seed 14847
+python3 main_pretrain.py --pca_dim 3 --seed 24491
+python3 main_pretrain.py --pca_dim 3 --seed 19621
+python3 main_pretrain.py --pca_dim 3 --seed 13284
+python3 main_pretrain.py --pca_dim 3 --seed 17256
+python3 main_pretrain.py --pca_dim 3 --seed 23424
+python3 main_pretrain.py --pca_dim 3 --seed 14313

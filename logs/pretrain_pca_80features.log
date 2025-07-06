@@ -1,0 +1,162 @@
+mordred_pretrain.py started, pc num:  80
+eigenvalue: [327.77381971 106.59204099  66.61228713  38.29649033  34.94439068
+  27.85488116  23.79782569  20.05718651  18.43896946  17.94649044
+  17.10643659  14.6201192   13.71347623  13.52236103  12.52601169
+  11.10856944  10.95713222  10.01693728   9.57561513   8.84996121
+   8.08327067   7.63043468   6.98869367   6.78675504   6.61733996
+   6.45505132   6.03013913   5.94162135   5.78198498   5.55366383
+   5.53061141   5.28263023   4.91008563   4.85112541   4.65969466
+   4.64100587   4.49006738   4.29940271   4.20840568   4.14373236
+   4.10306016   4.0316544    3.96105927   3.89236932   3.75592292
+   3.69398723   3.66436987   3.59145837   3.48734485   3.42775538
+   3.33532149   3.30591094   3.26303821   3.17001423   3.09909991
+   3.02781688   2.9833608    2.9152529    2.83620629   2.77141362
+   2.73875866   2.69899914   2.66985777   2.62341378   2.57401383
+   2.50947797   2.44901956   2.44650756   2.39119083   2.34451642
+   2.31501342   2.29356644   2.25828161   2.2425009    2.20386235
+   2.18861374   2.14432812   2.12416493   2.12092693   2.06911318]
+mordred processed finished!
+---epoch 0, lr 0.000500, train_loss 11.546790, time_per_epoch 0.178902
+Average loss: 11.546789752198393, patience counter: 0
+---epoch 1, lr 0.000500, train_loss 10.316054, time_per_epoch 0.100686
+Average loss: 10.316054431615205, patience counter: 0
+---epoch 2, lr 0.000500, train_loss 9.746718, time_per_epoch 0.099522
+Average loss: 9.746717810461412, patience counter: 0
+---epoch 3, lr 0.000500, train_loss 8.882581, time_per_epoch 0.090004
+Average loss: 8.882581116879656, patience counter: 0
+---epoch 4, lr 0.000500, train_loss 7.940048, time_per_epoch 0.075094
+Average loss: 7.940048252551183, patience counter: 0
+---epoch 5, lr 0.000500, train_loss 7.260189, time_per_epoch 0.075236
+Average loss: 7.260189267077769, patience counter: 0
+---epoch 6, lr 0.000500, train_loss 7.167578, time_per_epoch 0.074844
+Average loss: 7.16757794141659, patience counter: 0
+---epoch 7, lr 0.000500, train_loss 6.509816, time_per_epoch 0.078563
+Average loss: 6.50981595594948, patience counter: 0
+---epoch 8, lr 0.000500, train_loss 6.295504, time_per_epoch 0.086434
+Average loss: 6.295503972264484, patience counter: 0
+---epoch 9, lr 0.000500, train_loss 6.358823, time_per_epoch 0.086419
+Average loss: 6.295503972264484, patience counter: 1
+---epoch 10, lr 0.000500, train_loss 5.798556, time_per_epoch 0.081535
+Average loss: 5.798556089570797, patience counter: 0
+---epoch 11, lr 0.000500, train_loss 5.618923, time_per_epoch 0.079017
+Average loss: 5.618923260329497, patience counter: 0
+---epoch 12, lr 0.000500, train_loss 5.694615, time_per_epoch 0.076954
+Average loss: 5.618923260329497, patience counter: 1
+---epoch 13, lr 0.000500, train_loss 5.163506, time_per_epoch 0.080818
+Average loss: 5.163506400392654, patience counter: 0
+---epoch 14, lr 0.000500, train_loss 5.311260, time_per_epoch 0.078058
+Average loss: 5.163506400392654, patience counter: 1
+---epoch 15, lr 0.000500, train_loss 5.185835, time_per_epoch 0.080455
+Average loss: 5.163506400392654, patience counter: 2
+---epoch 16, lr 0.000500, train_loss 5.394253, time_per_epoch 0.075971
+Average loss: 5.163506400392654, patience counter: 3
+---epoch 17, lr 0.000500, train_loss 4.937106, time_per_epoch 0.076347
+Average loss: 4.93710608688904, patience counter: 0
+---epoch 18, lr 0.000500, train_loss 5.004192, time_per_epoch 0.078948
+Average loss: 4.93710608688904, patience counter: 1
+---epoch 19, lr 0.000500, train_loss 4.486251, time_per_epoch 0.076131
+Average loss: 4.486251099458992, patience counter: 0
+---epoch 20, lr 0.000500, train_loss 4.598200, time_per_epoch 0.068840
+Average loss: 4.486251099458992, patience counter: 1
+---epoch 21, lr 0.000500, train_loss 4.247680, time_per_epoch 0.079151
+Average loss: 4.24767971049978, patience counter: 0
+---epoch 22, lr 0.000500, train_loss 4.628306, time_per_epoch 0.077323
+Average loss: 4.24767971049978, patience counter: 1
+---epoch 23, lr 0.000500, train_loss 4.178071, time_per_epoch 0.079578
+Average loss: 4.178070564625756, patience counter: 0
+---epoch 24, lr 0.000500, train_loss 4.264792, time_per_epoch 0.077053
+Average loss: 4.178070564625756, patience counter: 1
+---epoch 25, lr 0.000500, train_loss 4.323780, time_per_epoch 0.076860
+Average loss: 4.178070564625756, patience counter: 2
+---epoch 26, lr 0.000500, train_loss 4.140265, time_per_epoch 0.084173
+Average loss: 4.140265361953732, patience counter: 0
+---epoch 27, lr 0.000500, train_loss 4.208059, time_per_epoch 0.082250
+Average loss: 4.140265361953732, patience counter: 1
+---epoch 28, lr 0.000500, train_loss 3.803637, time_per_epoch 0.079427
+Average loss: 3.8036366708689306, patience counter: 0
+---epoch 29, lr 0.000500, train_loss 3.962783, time_per_epoch 0.077740
+Average loss: 3.8036366708689306, patience counter: 1
+---epoch 30, lr 0.000500, train_loss 3.747418, time_per_epoch 0.076307
+Average loss: 3.7474179321805856, patience counter: 0
+---epoch 31, lr 0.000500, train_loss 3.979291, time_per_epoch 0.080769
+Average loss: 3.7474179321805856, patience counter: 1
+---epoch 32, lr 0.000500, train_loss 3.726976, time_per_epoch 0.077462
+Average loss: 3.7269759825878928, patience counter: 0
+---epoch 33, lr 0.000500, train_loss 3.548532, time_per_epoch 0.076579
+Average loss: 3.548532499304101, patience counter: 0
+---epoch 34, lr 0.000500, train_loss 3.780836, time_per_epoch 0.077815
+Average loss: 3.548532499304101, patience counter: 1
+---epoch 35, lr 0.000500, train_loss 3.470256, time_per_epoch 0.079528
+Average loss: 3.470255596707068, patience counter: 0
+---epoch 36, lr 0.000500, train_loss 3.641999, time_per_epoch 0.080022
+Average loss: 3.470255596707068, patience counter: 1
+---epoch 37, lr 0.000500, train_loss 3.725250, time_per_epoch 0.079464
+Average loss: 3.470255596707068, patience counter: 2
+---epoch 38, lr 0.000500, train_loss 3.259981, time_per_epoch 0.071408
+Average loss: 3.2599813243934985, patience counter: 0
+---epoch 39, lr 0.000500, train_loss 3.451967, time_per_epoch 0.076723
+Average loss: 3.2599813243934985, patience counter: 1
+---epoch 40, lr 0.000500, train_loss 3.232038, time_per_epoch 0.077725
+Average loss: 3.232037509044123, patience counter: 0
+---epoch 41, lr 0.000500, train_loss 3.372790, time_per_epoch 0.074140
+Average loss: 3.232037509044123, patience counter: 1
+---epoch 42, lr 0.000500, train_loss 3.563168, time_per_epoch 0.076833
+Average loss: 3.232037509044123, patience counter: 2
+---epoch 43, lr 0.000500, train_loss 3.186400, time_per_epoch 0.079390
+Average loss: 3.1864002618875484, patience counter: 0
+---epoch 44, lr 0.000500, train_loss 3.144990, time_per_epoch 0.078201
+Average loss: 3.14499022229781, patience counter: 0
+---epoch 45, lr 0.000500, train_loss 2.937115, time_per_epoch 0.079845
+Average loss: 2.9371152095055275, patience counter: 0
+---epoch 46, lr 0.000500, train_loss 3.240543, time_per_epoch 0.075438
+Average loss: 2.9371152095055275, patience counter: 1
+---epoch 47, lr 0.000500, train_loss 2.893634, time_per_epoch 0.078156
+Average loss: 2.893634370746551, patience counter: 0
+---epoch 48, lr 0.000500, train_loss 3.014413, time_per_epoch 0.077683
+Average loss: 2.893634370746551, patience counter: 1
+---epoch 49, lr 0.000500, train_loss 3.970739, time_per_epoch 0.073750
+Average loss: 2.893634370746551, patience counter: 2
+---epoch 50, lr 0.000500, train_loss 3.474542, time_per_epoch 0.079217
+Average loss: 2.893634370746551, patience counter: 3
+---epoch 51, lr 0.000500, train_loss 2.856848, time_per_epoch 0.079290
+Average loss: 2.8568480671670917, patience counter: 0
+---epoch 52, lr 0.000500, train_loss 2.772728, time_per_epoch 0.076855
+Average loss: 2.772728196028414, patience counter: 0
+---epoch 53, lr 0.000500, train_loss 2.779883, time_per_epoch 0.079964
+Average loss: 2.772728196028414, patience counter: 1
+---epoch 54, lr 0.000500, train_loss 2.736693, time_per_epoch 0.076132
+Average loss: 2.736693451519078, patience counter: 0
+---epoch 55, lr 0.000500, train_loss 2.640224, time_per_epoch 0.076175
+Average loss: 2.640224174137619, patience counter: 0
+---epoch 56, lr 0.000500, train_loss 3.008873, time_per_epoch 0.076123
+Average loss: 2.640224174137619, patience counter: 1
+---epoch 57, lr 0.000500, train_loss 3.140337, time_per_epoch 0.074874
+Average loss: 2.640224174137619, patience counter: 2
+---epoch 58, lr 0.000500, train_loss 2.806292, time_per_epoch 0.080047
+Average loss: 2.640224174137619, patience counter: 3
+---epoch 59, lr 0.000500, train_loss 2.646065, time_per_epoch 0.079661
+Average loss: 2.640224174137619, patience counter: 4
+---epoch 60, lr 0.000500, train_loss 2.416403, time_per_epoch 0.075130
+Average loss: 2.416403048102074, patience counter: 0
+---epoch 61, lr 0.000500, train_loss 2.507734, time_per_epoch 0.080457
+Average loss: 2.416403048102074, patience counter: 1
+---epoch 62, lr 0.000500, train_loss 3.169960, time_per_epoch 0.074540
+Average loss: 2.416403048102074, patience counter: 2
+---epoch 63, lr 0.000500, train_loss 2.581307, time_per_epoch 0.075599
+Average loss: 2.416403048102074, patience counter: 3
+---epoch 64, lr 0.000500, train_loss 2.669890, time_per_epoch 0.072145
+Average loss: 2.416403048102074, patience counter: 4
+---epoch 65, lr 0.000500, train_loss 2.323673, time_per_epoch 0.076092
+Average loss: 2.3236734751037673, patience counter: 0
+---epoch 66, lr 0.000500, train_loss 4.985904, time_per_epoch 0.078549
+Average loss: 2.3236734751037673, patience counter: 1
+---epoch 67, lr 0.000500, train_loss 3.691657, time_per_epoch 0.070135
+Average loss: 2.3236734751037673, patience counter: 2
+---epoch 68, lr 0.000500, train_loss 2.832139, time_per_epoch 0.075604
+Average loss: 2.3236734751037673, patience counter: 3
+---epoch 69, lr 0.000500, train_loss 2.505091, time_per_epoch 0.078173
+Average loss: 2.3236734751037673, patience counter: 4
+---epoch 70, lr 0.000500, train_loss 2.436644, time_per_epoch 0.073960
+Early stopping due to lack of patience at epoch: 70
+pretraining terminated!
+learning time (min): 5.668831932544708

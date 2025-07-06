@@ -1,0 +1,15 @@
+\begin{table}[h]
+\centering
+\begin{tabular}{lcccc}
+\toprule
+\textbf{Método} & \textbf{MAE} & \textbf{RMSE} & \textbf{R²} & \textbf{Spearman} \\
+\midrule
+PCA & \textbf{6.075} & \textbf{9.893} & \textbf{0.868} & 0.535 \\
+ISOMAP & 6.109 & 10.129 & 0.862 & 0.483 \\
+t-SNE & 7.107 & 10.912 & 0.840 & 0.498 \\
+UMAP & 11.729 & 17.265 & 0.599 & \textbf{0.566} \\
+\bottomrule
+\end{tabular}
+\caption{Resultados de test para 80 features, Experimento 3}
+\label{tab:test_results_80feat_exp3}
+\end{table}

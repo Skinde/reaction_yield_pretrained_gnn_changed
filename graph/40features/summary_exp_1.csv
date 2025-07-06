@@ -1,0 +1,5 @@
+Method,Features,Final Loss,Total Time (min)
+PCA,40,-0.5,5.56
+ISOMAP,40,-0.474,5.54
+t-SNE,3,-0.475,5.5
+UMAP,40,-0.499,5.59

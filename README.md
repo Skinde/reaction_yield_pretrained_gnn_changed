@@ -28,13 +28,5 @@ Source code for the paper: Improving Chemical Reaction Yield Prediction Using Pr
 
 ## Citation
 ```
-@Article{reaction_yield_pretrained_gnn,
-  title={Improving chemical reaction yield prediction using pre-trained graph neural networks},
-  author={Han, Jongmin and Kwon, Youngchun and Choi, Youn-Suk and Kang, Seokho},
-  journal={Journal of Cheminformatics},
-  volume={16},
-  number={25}
-  year={2024},
-  doi={10.1186/s13321-024-00818-z}
-}
+TBU
 ```

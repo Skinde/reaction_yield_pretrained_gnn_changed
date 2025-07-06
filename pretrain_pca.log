@@ -1,0 +1,32 @@
+mordred_pretrain.py started, pc num:  40
+eigenvalue: [327.77381971 106.59204099  66.61228713  38.29649033  34.94439068
+  27.85488116  23.79782569  20.05718651  18.43896946  17.94649044
+  17.10643659  14.6201192   13.71347622  13.52236102  12.52601162
+  11.1085693   10.95713212  10.01693307   9.5756146    8.84995758
+   8.08326454   7.63042466   6.98859993   6.78673366   6.6171532
+   6.45498568   6.03005102   5.9408614    5.78099537   5.55274224
+   5.52883142   5.2772668    4.90234589   4.84219305   4.64797088
+   4.62513157   4.48005168   4.28222769   4.16202324   4.10227172]
+mordred processed finished!
+---epoch 0, lr 0.000500, train_loss 20.278540, time_per_epoch 0.136964
+Average loss: 20.278539882865843, patience counter: 0
+---epoch 1, lr 0.000500, train_loss 17.691721, time_per_epoch 0.063140
+Average loss: 17.691721410507583, patience counter: 0
+---epoch 2, lr 0.000500, train_loss 16.340461, time_per_epoch 0.080262
+Average loss: 16.340461370781487, patience counter: 0
+---epoch 3, lr 0.000500, train_loss 14.923683, time_per_epoch 0.081151
+Average loss: 14.923682912733526, patience counter: 0
+---epoch 4, lr 0.000500, train_loss 13.637818, time_per_epoch 0.077902
+Average loss: 13.63781769852635, patience counter: 0
+---epoch 5, lr 0.000500, train_loss 11.828150, time_per_epoch 0.079766
+Average loss: 11.828150316594813, patience counter: 0
+---epoch 6, lr 0.000500, train_loss 11.074235, time_per_epoch 0.079421
+Average loss: 11.074234910228123, patience counter: 0
+---epoch 7, lr 0.000500, train_loss 10.119483, time_per_epoch 0.081858
+Average loss: 10.119483325315475, patience counter: 0
+---epoch 8, lr 0.000500, train_loss 10.136792, time_per_epoch 0.079253
+Average loss: 10.119483325315475, patience counter: 1
+---epoch 9, lr 0.000500, train_loss 9.342714, time_per_epoch 0.075937
+Average loss: 9.342714281029085, patience counter: 0
+pretraining terminated!
+learning time (min): 0.8358346104621888

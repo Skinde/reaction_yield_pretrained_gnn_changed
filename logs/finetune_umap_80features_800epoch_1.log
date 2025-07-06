@@ -1,0 +1,115 @@
+-- CONFIGURATIONS
+--- data_type: 1 0
+--- train/test: 2767/1188
+--- max no. reactants: 6
+--- max no. products: 1
+--- use_saved: False
+--- model_path: ./model/finetuned/model_1_0_2767_27407.pt
+variable project_node_feats.0.weight loaded!
+variable project_node_feats.0.bias loaded!
+variable project_edge_feats.0.weight loaded!
+variable project_edge_feats.0.bias loaded!
+variable gnn_layers.0.eps loaded!
+variable gnn_layers.0.apply_func.0.weight loaded!
+variable gnn_layers.0.apply_func.0.bias loaded!
+variable gnn_layers.0.apply_func.2.weight loaded!
+variable gnn_layers.0.apply_func.2.bias loaded!
+variable gnn_layers.1.eps loaded!
+variable gnn_layers.1.apply_func.0.weight loaded!
+variable gnn_layers.1.apply_func.0.bias loaded!
+variable gnn_layers.1.apply_func.2.weight loaded!
+variable gnn_layers.1.apply_func.2.bias loaded!
+variable gnn_layers.2.eps loaded!
+variable gnn_layers.2.apply_func.0.weight loaded!
+variable gnn_layers.2.apply_func.0.bias loaded!
+variable gnn_layers.2.apply_func.2.weight loaded!
+variable gnn_layers.2.apply_func.2.bias loaded!
+variable sparsify.0.weight loaded!
+variable sparsify.0.bias loaded!
+variable sparsify.1.weight loaded!
+Successfully loaded pretrained model!
+-- TRAINING
+--- training epoch 9, lr 0.000500, processed 2767/2767, loss 0.233, time elapsed(min) 0.11
+--- training epoch 19, lr 0.000500, processed 2767/2767, loss 0.124, time elapsed(min) 0.11
+--- training epoch 29, lr 0.000500, processed 2767/2767, loss 0.027, time elapsed(min) 0.11
+--- training epoch 39, lr 0.000500, processed 2767/2767, loss 0.012, time elapsed(min) 0.11
+--- training epoch 49, lr 0.000500, processed 2767/2767, loss -0.045, time elapsed(min) 0.11
+--- training epoch 59, lr 0.000500, processed 2767/2767, loss -0.103, time elapsed(min) 0.11
+--- training epoch 69, lr 0.000500, processed 2767/2767, loss -0.121, time elapsed(min) 0.11
+--- training epoch 79, lr 0.000500, processed 2767/2767, loss -0.166, time elapsed(min) 0.11
+--- training epoch 89, lr 0.000500, processed 2767/2767, loss -0.178, time elapsed(min) 0.11
+--- training epoch 99, lr 0.000500, processed 2767/2767, loss -0.223, time elapsed(min) 0.11
+--- training epoch 109, lr 0.000500, processed 2767/2767, loss -0.251, time elapsed(min) 0.11
+--- training epoch 119, lr 0.000500, processed 2767/2767, loss -0.260, time elapsed(min) 0.11
+--- training epoch 129, lr 0.000500, processed 2767/2767, loss -0.267, time elapsed(min) 0.11
+--- training epoch 139, lr 0.000500, processed 2767/2767, loss -0.294, time elapsed(min) 0.11
+--- training epoch 149, lr 0.000500, processed 2767/2767, loss -0.311, time elapsed(min) 0.11
+--- training epoch 159, lr 0.000500, processed 2767/2767, loss -0.325, time elapsed(min) 0.11
+--- training epoch 169, lr 0.000500, processed 2767/2767, loss -0.307, time elapsed(min) 0.11
+--- training epoch 179, lr 0.000500, processed 2767/2767, loss -0.332, time elapsed(min) 0.11
+--- training epoch 189, lr 0.000500, processed 2767/2767, loss -0.336, time elapsed(min) 0.11
+--- training epoch 199, lr 0.000500, processed 2767/2767, loss -0.351, time elapsed(min) 0.11
+--- training epoch 209, lr 0.000500, processed 2767/2767, loss -0.333, time elapsed(min) 0.11
+--- training epoch 219, lr 0.000500, processed 2767/2767, loss -0.358, time elapsed(min) 0.11
+--- training epoch 229, lr 0.000500, processed 2767/2767, loss -0.363, time elapsed(min) 0.11
+--- training epoch 239, lr 0.000500, processed 2767/2767, loss -0.361, time elapsed(min) 0.11
+--- training epoch 249, lr 0.000500, processed 2767/2767, loss -0.367, time elapsed(min) 0.11
+--- training epoch 259, lr 0.000500, processed 2767/2767, loss -0.375, time elapsed(min) 0.11
+--- training epoch 269, lr 0.000500, processed 2767/2767, loss -0.366, time elapsed(min) 0.11
+--- training epoch 279, lr 0.000500, processed 2767/2767, loss -0.383, time elapsed(min) 0.11
+--- training epoch 289, lr 0.000500, processed 2767/2767, loss -0.385, time elapsed(min) 0.11
+--- training epoch 299, lr 0.000500, processed 2767/2767, loss -0.400, time elapsed(min) 0.11
+--- training epoch 309, lr 0.000500, processed 2767/2767, loss -0.401, time elapsed(min) 0.11
+--- training epoch 319, lr 0.000500, processed 2767/2767, loss -0.398, time elapsed(min) 0.11
+--- training epoch 329, lr 0.000500, processed 2767/2767, loss -0.400, time elapsed(min) 0.11
+--- training epoch 339, lr 0.000500, processed 2767/2767, loss -0.406, time elapsed(min) 0.11
+--- training epoch 349, lr 0.000500, processed 2767/2767, loss -0.411, time elapsed(min) 0.11
+--- training epoch 359, lr 0.000500, processed 2767/2767, loss -0.414, time elapsed(min) 0.11
+--- training epoch 369, lr 0.000500, processed 2767/2767, loss -0.403, time elapsed(min) 0.11
+--- training epoch 379, lr 0.000500, processed 2767/2767, loss -0.423, time elapsed(min) 0.11
+--- training epoch 389, lr 0.000500, processed 2767/2767, loss -0.416, time elapsed(min) 0.11
+--- training epoch 399, lr 0.000500, processed 2767/2767, loss -0.414, time elapsed(min) 0.11
+--- training epoch 409, lr 0.000050, processed 2767/2767, loss -0.476, time elapsed(min) 0.11
+--- training epoch 419, lr 0.000050, processed 2767/2767, loss -0.474, time elapsed(min) 0.11
+--- training epoch 429, lr 0.000050, processed 2767/2767, loss -0.480, time elapsed(min) 0.11
+--- training epoch 439, lr 0.000050, processed 2767/2767, loss -0.484, time elapsed(min) 0.11
+--- training epoch 449, lr 0.000050, processed 2767/2767, loss -0.478, time elapsed(min) 0.11
+--- training epoch 459, lr 0.000005, processed 2767/2767, loss -0.487, time elapsed(min) 0.11
+--- training epoch 469, lr 0.000005, processed 2767/2767, loss -0.488, time elapsed(min) 0.11
+--- training epoch 479, lr 0.000005, processed 2767/2767, loss -0.494, time elapsed(min) 0.11
+--- training epoch 489, lr 0.000005, processed 2767/2767, loss -0.487, time elapsed(min) 0.11
+--- training epoch 499, lr 0.000005, processed 2767/2767, loss -0.492, time elapsed(min) 0.11
+--- training epoch 509, lr 0.000005, processed 2767/2767, loss -0.487, time elapsed(min) 0.11
+--- training epoch 519, lr 0.000005, processed 2767/2767, loss -0.487, time elapsed(min) 0.11
+--- training epoch 529, lr 0.000005, processed 2767/2767, loss -0.492, time elapsed(min) 0.11
+--- training epoch 539, lr 0.000005, processed 2767/2767, loss -0.493, time elapsed(min) 0.10
+--- training epoch 549, lr 0.000005, processed 2767/2767, loss -0.488, time elapsed(min) 0.11
+--- training epoch 559, lr 0.000005, processed 2767/2767, loss -0.493, time elapsed(min) 0.11
+--- training epoch 569, lr 0.000005, processed 2767/2767, loss -0.492, time elapsed(min) 0.11
+--- training epoch 579, lr 0.000005, processed 2767/2767, loss -0.494, time elapsed(min) 0.11
+--- training epoch 589, lr 0.000005, processed 2767/2767, loss -0.492, time elapsed(min) 0.11
+--- training epoch 599, lr 0.000005, processed 2767/2767, loss -0.489, time elapsed(min) 0.11
+--- training epoch 609, lr 0.000005, processed 2767/2767, loss -0.488, time elapsed(min) 0.11
+--- training epoch 619, lr 0.000005, processed 2767/2767, loss -0.491, time elapsed(min) 0.11
+--- training epoch 629, lr 0.000005, processed 2767/2767, loss -0.500, time elapsed(min) 0.11
+--- training epoch 639, lr 0.000005, processed 2767/2767, loss -0.492, time elapsed(min) 0.11
+--- training epoch 649, lr 0.000005, processed 2767/2767, loss -0.493, time elapsed(min) 0.11
+--- training epoch 659, lr 0.000005, processed 2767/2767, loss -0.492, time elapsed(min) 0.11
+--- training epoch 669, lr 0.000005, processed 2767/2767, loss -0.494, time elapsed(min) 0.11
+--- training epoch 679, lr 0.000005, processed 2767/2767, loss -0.494, time elapsed(min) 0.11
+--- training epoch 689, lr 0.000005, processed 2767/2767, loss -0.493, time elapsed(min) 0.10
+--- training epoch 699, lr 0.000005, processed 2767/2767, loss -0.494, time elapsed(min) 0.11
+--- training epoch 709, lr 0.000005, processed 2767/2767, loss -0.494, time elapsed(min) 0.11
+--- training epoch 719, lr 0.000005, processed 2767/2767, loss -0.490, time elapsed(min) 0.11
+--- training epoch 729, lr 0.000005, processed 2767/2767, loss -0.488, time elapsed(min) 0.10
+--- training epoch 739, lr 0.000005, processed 2767/2767, loss -0.486, time elapsed(min) 0.11
+--- training epoch 749, lr 0.000005, processed 2767/2767, loss -0.491, time elapsed(min) 0.11
+--- training epoch 759, lr 0.000005, processed 2767/2767, loss -0.490, time elapsed(min) 0.11
+--- training epoch 769, lr 0.000005, processed 2767/2767, loss -0.495, time elapsed(min) 0.11
+--- training epoch 779, lr 0.000005, processed 2767/2767, loss -0.489, time elapsed(min) 0.11
+--- training epoch 789, lr 0.000005, processed 2767/2767, loss -0.491, time elapsed(min) 0.11
+--- training epoch 799, lr 0.000005, processed 2767/2767, loss -0.493, time elapsed(min) 0.11
+training terminated at epoch 799
+-- RESULT
+--- test size: 1188
+--- MAE: 2.967, RMSE: 4.495, R2: 0.973, Spearman: 0.440

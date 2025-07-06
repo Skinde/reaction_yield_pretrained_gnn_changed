@@ -173,6 +173,10 @@ def training(
         optimizer, milestones=[400, 450], gamma=0.1, verbose=False
     )
 
+    best_loss = np.inf
+    patience = 5
+    patience_counter = 0
+
     for epoch in range(n_epochs):
         # training
         net.train()
@@ -204,6 +208,8 @@ def training(
             train_loss = loss.detach().item()
             train_loss_list.append(train_loss)
 
+        current_loss = np.mean(train_loss_list)
+
         if (epoch + 1) % 10 == 0:
             print(
                 "--- training epoch %d, lr %f, processed %d/%d, loss %.3f, time elapsed(min) %.2f"
@@ -212,10 +218,11 @@ def training(
                     optimizer.param_groups[-1]["lr"],
                     train_size,
                     train_size,
-                    np.mean(train_loss_list),
+                    current_loss,
                     (time.time() - start_time) / 60,
                 )
             )
+
 
         lr_scheduler.step()
 
@@ -242,6 +249,15 @@ def training(
                 "--- validation at epoch %d, processed %d, current MAE %.3f RMSE %.3f R2 %.3f"
                 % (epoch, len(val_y), result[0], result[1], result[2])
             )
+
+            if current_loss < best_loss:
+                best_loss = current_loss
+                patience_counter = 0
+            else:
+                patience_counter += 1
+            if patience_counter >= patience:
+                print("terminated due to low patience")
+                break
 
     print("training terminated at epoch %d" % epoch)
     torch.save(net.state_dict(), model_path)
